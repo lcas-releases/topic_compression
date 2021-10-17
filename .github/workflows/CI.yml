@@ -1,0 +1,16 @@
+name: Topic Compression
+on: [push, pull_request, release]
+jobs:
+  ros_setup:
+    name: Topic Compression Tests
+    runs-on: ubuntu-18.04 # host machine not container OS
+    strategy:
+      fail-fast: false
+      matrix:
+        ros_distro: [melodic] # @todo: add kinetic support later
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup ROS and Build
+        run: |
+          docker-compose -f ./docker/docker-compose-ci.yml build
+        timeout-minutes: 5

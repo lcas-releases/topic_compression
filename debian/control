@@ -1,0 +1,13 @@
+Source: ros-melodic-topic-compression
+Section: misc
+Priority: optional
+Maintainer: Raymond Kirk <rkirk@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-cv-bridge, ros-melodic-image-transport, ros-melodic-message-generation, ros-melodic-pybind11-catkin, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-std-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-topic-compression
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-cv-bridge, ros-melodic-image-transport, ros-melodic-message-runtime, ros-melodic-pybind11-catkin, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-std-msgs
+Description: The topic_compression package.
+ Used for compressing common ROS topic messages.

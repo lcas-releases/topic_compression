@@ -6,7 +6,7 @@
 
 <package format="2">
   <name>topic_compression</name>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <description>
     The topic_compression package.
     Used for compressing common ROS topic messages.
